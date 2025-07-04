@@ -1,4 +1,4 @@
-# Project: Vibe Typing Speed Trainer 2025 
+# Project: Vibe Typing Speed Trainer 2025
 
 ## Overview
 
@@ -45,8 +45,9 @@ typing-trainer/
 │   requirements.txt
 │   log.json (created after first session)
 │
-├───data/
+├───utils/
 │       sentences.txt
+│       sentence_generator.py
 │
 ├───static/
 │       script.js
@@ -145,4 +146,4 @@ By completing this project, students will:
 
 Start by running the app and testing its current functionality. Then use the main prompt with your preferred LLM to begin the debugging adventure!
 
-**Remember**: The goal is not just to fix bugs, but to understand why they exist and how to prevent them in the future. Happy coding! 
+**Remember**: The goal is not just to fix bugs, but to understand why they exist and how to prevent them in the future. Happy coding!
