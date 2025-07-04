@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Typing Trainer 2025</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1 class="title">
+                <span class="gradient-text">VIBE</span>
+                <span class="typing-text">TYPING</span>
+                <span class="trainer-text">TRAINER</span>
+            </h1>
+            <p class="subtitle">Level up your coding speed with style</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Slot Machine Style Sentence Display -->
+            <div class="sentence-machine">
+                <div class="machine-frame">
+                    <div class="slot-container">
+                        <div class="slot-wheel" id="sentence-wheel">
+                            <div class="sentence-item previous" id="prev-sentence">
+                                <span class="sentence-text">Loading previous...</span>
+                            </div>
+                            <div class="sentence-item current" id="current-sentence">
+                                <span class="sentence-text">Loading current sentence...</span>
+                            </div>
+                            <div class="sentence-item next" id="next-sentence">
+                                <span class="sentence-text">Loading next...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="machine-lights">
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                        <div class="light"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" id="typing-input" placeholder="Start typing here..." autocomplete="off" spellcheck="false">
+                    <div class="input-glow"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Stats Panel -->
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <div class="stat-value" id="wpm-value">0</div>
+                    <div class="stat-label">WPM</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="accuracy-value">100</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="time-value">0</div>
+                    <div class="stat-label">Time</div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="new-sentence-btn" class="btn btn-primary">
+                    <span class="btn-text">New Sentence</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button id="retry-btn" class="btn btn-secondary" style="display: none;">
+                    <span class="btn-text">Try Again</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Completion Modal -->
+        <div id="completion-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>🎉 Sentence Completed!</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="final-stats">
+                        <div class="final-stat">
+                            <span class="final-stat-label">Words Per Minute:</span>
+                            <span class="final-stat-value" id="final-wpm">0</span>
+                        </div>
+                        <div class="final-stat">
+                            <span class="final-stat-label">Accuracy:</span>
+                            <span class="final-stat-value" id="final-accuracy">100%</span>
+                        </div>
+                        <div class="final-stat">
+                            <span class="final-stat-label">Time Taken:</span>
+                            <span class="final-stat-value" id="final-time">0s</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="continue-btn" class="btn btn-primary">
+                        <span class="btn-text">Continue</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

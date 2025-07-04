@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2025-07-05T00:25:19.968077",
+    "wpm": 11,
+    "accuracy": 66,
+    "sentence": "The student expertly handles intricate patterns despite the challenges.",
+    "time_taken": 48.996
+  },
+  {
+    "timestamp": "2025-07-05T00:25:47.695259",
+    "wpm": 25,
+    "accuracy": 99,
+    "sentence": "A musician efficiently codes beautiful melodies with great precision.",
+    "time_taken": 21.407
+  },
+  {
+    "timestamp": "2025-07-05T00:26:48.754953",
+    "wpm": 32,
+    "accuracy": 99,
+    "sentence": "The teacher efficiently codes artistic masterpieces with creative flair.",
+    "time_taken": 16.995
+  }
+]
