@@ -14,7 +14,7 @@ WORD_POOLS = {
     'endings': ['with great precision.', 'under tight deadlines.', 'while learning new skills.', 'to achieve excellence.', 'with remarkable accuracy.', 'in record time.', 'with unwavering focus.', 'despite the challenges.', 'with creative flair.', 'using modern techniques.']
 }
 
-# Load sentences from files
+# Load sentences from file
 def load_sentences():
     sentences_file = os.path.join('data', 'sentences.txt')
     if os.path.exists(sentences_file):
